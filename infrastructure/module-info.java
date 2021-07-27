@@ -1,6 +1,9 @@
-module example.org.hexagonal.application {
+module hr.dstr89.hexagonal.infrastructure {
+    requires java.sql;
+    requires org.slf4j;
+    requires lombok;
+    requires example.org.hexagonal.application;
     requires example.org.hexagonal.domain;
-    requires example.org.commons.lang3;
 
-    exports example.org.hexagonal.application;
+    exports example.org.hexagonal.infrastructure;
 }
